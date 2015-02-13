@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+    background-color: #00796B;
+}
+
+#left-triangle {
+    width: 80%;
+    height: 85%;
+    background: #B2DFDB;
+    float: left;
+    margin-left: -10%;
+    margin-top: -20%;
+    box-shadow: 1px 1px 15px black;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    overflow: hidden;
+    -webkit-box-shadow: 10px 10px 71px -24px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 71px -24px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 71px -24px rgba(0,0,0,0.5);
+}
+
+#innerCircle {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: url("/privateSite/resources/images/IMG_4547.JPG") no-repeat center top;
+    background-size: contain;
+    -moz-border-radius: 175px;
+    -webkit-border-radius: 175px;
+    border-radius: 175px;
+    border: 4px solid white;
+    margin: auto auto auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    -webkit-box-shadow: 0px 4px 20px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 4px 20px -2px rgba(0,0,0,0.5);
+    box-shadow: 0px 4px 20px -2px rgba(0,0,0,0.5)
+
+}
