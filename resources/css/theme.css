@@ -70,3 +70,9 @@ html, body {
         width: 20%;
     }
 }
+
+@media (max-width: 800px) {
+    #me {
+        width: 160px;
+    }
+}
