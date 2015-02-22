@@ -49,12 +49,23 @@ html, body {
 }
 
 #me {
-    width: 30%;
+    width: 25%;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+}
+
+
+#nav-mobile p{
+    width: 80%;
+    float: right;
+    margin-top: 0px;
+ }
+
+#nav-mobile a{
+    width: 100%;
 }
 
 #wrapper td img:hover {
@@ -74,5 +85,11 @@ html, body {
 @media (max-width: 800px) {
     #me {
         width: 160px;
+    }
+}
+
+@media (max-width: 992px) {
+    .but-collapse {
+        visibility: hidden;
     }
 }

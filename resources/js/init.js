@@ -1,9 +1,16 @@
 (function($){
     $(function(){
 
+        $('.but-collapse').sideNav({
+                edge: 'left', // Choose the horizontal origin
+                activationWidth: 70,
+                closeOnClick: true
+            }
+        );
         $('.button-collapse').sideNav({
                 edge: 'left', // Choose the horizontal origin
-                activationWidth: 70
+                activationWidth: 70,
+                closeOnClick: true
             }
         );
 
