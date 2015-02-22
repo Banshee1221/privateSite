@@ -29,8 +29,9 @@ html, body {
 
 #homeNav p {
     float:right;
-    margin-top: -3px;
+    margin-top: 0px;
     margin-bottom: -26px;
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
 #wrapper {
