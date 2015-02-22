@@ -3,14 +3,14 @@
 
         $('.but-collapse').sideNav({
                 edge: 'left', // Choose the horizontal origin
-                menuWidth: 300,
+                menuWidth: 240,
                 activationWidth: 70,
                 closeOnClick: true
             }
         );
         $('.button-collapse').sideNav({
                 edge: 'left', // Choose the horizontal origin
-                menuWidth: 300,
+                menuWidth: 240,
                 activationWidth: 70,
                 closeOnClick: true
             }
