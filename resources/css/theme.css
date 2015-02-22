@@ -21,6 +21,18 @@ html, body {
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
+#homeNav {
+    height: 64px;
+    margin-right: 50px;
+    margin-bottom: -26px;
+}
+
+#homeNav p {
+    float:right;
+    margin-top: -3px;
+    margin-bottom: -26px;
+}
+
 #wrapper {
     height: calc(100% - 64px);
     height: -moz-calc(100% - 64px);
