@@ -156,3 +156,31 @@ nav {
 }
 
 /* done */
+
+table {
+}
+
+#socialMedia {
+    width: 200px;
+    height: calc(100% - 64px);
+    height: -moz-calc(100% - 64px);
+    height: -webkit-calc(100% - 64px);
+    height: -o-calc(100% - 64px);
+    height: calc(100% - 64px);
+    position: absolute;
+    margin-top: 64px;
+    display: table;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#centered {
+    display:table-cell;
+    vertical-align:middle;
+    text-align: right;
+}
+
+#centered ul {
+    margin-right: 20px;
+}
