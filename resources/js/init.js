@@ -33,10 +33,14 @@
             $('.scrollspy').scrollSpy();
         });
 
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-jQuery(function($) {
+/* jQuery(function($) {
     function fixDiv() {
         var $cache = $('#toc');
         if ($(window).scrollTop() < 64)
@@ -52,4 +56,4 @@ jQuery(function($) {
     }
     $(window).scroll(fixDiv);
     fixDiv();
-});
+}); */
