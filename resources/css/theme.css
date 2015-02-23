@@ -144,4 +144,15 @@ nav {
     line-height: 64px !important;
 }
 
+.button-collapse {
+    height: 64px !important;
+}
 
+@media only screen and (max-width : 600px) {
+    .button-collapse i{
+        position: absolute;
+        margin-top: 4px;
+    }
+}
+
+/* done */
