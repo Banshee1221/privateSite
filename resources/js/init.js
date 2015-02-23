@@ -16,11 +16,22 @@
             }
         );
 
+        if ($('nav').length) {
+            $('.toc-wrapper').pushpin({ top: $('.nav-wrapper').offset().top });
+        }
+        else {
+            $('.toc-wrapper').pushpin({ top: 0 });
+        }
+
+        $(document).ready(function(){
+            $('.collapsible').collapsible({
+                accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+        });
+
+        $(document).ready(function(){
+            $('.scrollspy').scrollSpy();
+        });
+
     }); // end of document ready
 })(jQuery); // end of jQuery name space
-
-$(document).ready(function(){
-    $('.collapsible').collapsible({
-        accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    });
-});
