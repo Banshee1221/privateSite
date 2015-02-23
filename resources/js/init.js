@@ -35,3 +35,21 @@
 
     }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+jQuery(function($) {
+    function fixDiv() {
+        var $cache = $('#toc');
+        if ($(window).scrollTop() < 64)
+            $cache.css({
+                'position': 'fixed',
+                'top': '64px'
+            });
+        else
+            $cache.css({
+                'position': 'fixed',
+                'top': '0px'
+            });
+    }
+    $(window).scroll(fixDiv);
+    fixDiv();
+});
