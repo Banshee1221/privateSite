@@ -186,11 +186,18 @@ table {
     margin-right: -55px;
 }
 
-.sideAnim {
-    -webkit-animation: socialMove 1s forwards; /* Safari 4+ */
-    -moz-animation:    socialMove 1s forwards; /* Fx 5+ */
-    -o-animation:      socialMove 1s forwards; /* Opera 12+ */
-    animation:         socialMove 1s forwards; /* IE 10+, Fx 29+ */
+.sideAnimIn {
+    -webkit-animation: socialMoveIn 1s forwards; /* Safari 4+ */
+    -moz-animation:    socialMoveIn 1s forwards; /* Fx 5+ */
+    -o-animation:      socialMoveIn 1s forwards; /* Opera 12+ */
+    animation:         socialMoveIn 1s forwards; /* IE 10+, Fx 29+ */
+}
+
+.sideAnimOut {
+    -webkit-animation: socialMoveOut 1s forwards; /* Safari 4+ */
+    -moz-animation:    socialMoveOut 1s forwards; /* Fx 5+ */
+    -o-animation:      socialMoveOut 1s forwards; /* Opera 12+ */
+    animation:         socialMoveOut 1s forwards; /* IE 10+, Fx 29+ */
 }
 
 #centeredCaller {
@@ -204,19 +211,37 @@ table {
     margin-right: 20px;
 }
 
-@-webkit-keyframes socialMove {
+@-webkit-keyframes socialMoveIn {
     0%   { margin-right: -55px; }
     100% { margin-right: 20px; }
 }
-@-moz-keyframes socialMove {
+@-moz-keyframes socialMoveIn {
     0%   { margin-right: -55px; }
     100% { margin-right: 20px; }
 }
-@-o-keyframes socialMove {
+@-o-keyframes socialMoveIn {
     0%   { margin-right: -55px; }
     100% { margin-right: 20px; }
 }
-@keyframes socialMove {
+@keyframes socialMoveIn {
     0%   { margin-right: -55px; }
     100% { margin-right: 20px; }
+}
+
+
+@-webkit-keyframes socialMoveOut {
+    0%   { margin-right: 20px; }
+    100% { margin-right: -55px; }
+}
+@-moz-keyframes socialMoveOut {
+    0%   { margin-right: 20px; }
+    100% { margin-right: -55px; }
+}
+@-o-keyframes socialMoveOut {
+    0%   { margin-right: 20px; }
+    100% { margin-right: -55px; }
+}
+@keyframes socialMoveOut {
+    0%   { margin-right: 20px; }
+    100% { margin-right: -55px; }
 }

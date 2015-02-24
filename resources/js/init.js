@@ -40,6 +40,18 @@
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+$(document).ready(function(){
+    $('#but').click(function(){
+        if ($('#test2').hasClass('sideAnimIn')){
+            $("#test2").addClass('sideAnimOut');
+            $("#test2").removeClass('sideAnimIn');
+        } else {
+            $("#test2").removeClass('sideAnimOut');
+            $("#test2").addClass('sideAnimIn');
+        }
+    });
+});
+
 /* jQuery(function($) {
     function fixDiv() {
         var $cache = $('#toc');

@@ -6,13 +6,22 @@
         <link type="text/css" rel="stylesheet" href="resources/css/materialize.min.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="resources/css/theme.css"  media="screen,projection"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link rel="stylesheet" href="resources/css/material-design-hamburger.css">
         <title>Home of Eugene de Beste</title>
     </head>
 
     <body>
+        <script src="resources/js/material-design-hamburger.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="resources/js/materialize.min.js"></script>
         <script type="text/javascript" src="resources/js/init.js"></script>
+
+        <section class="material-design-hamburger">
+            <button class="material-design-hamburger__icon">
+                <span class="material-design-hamburger__layer"></span>
+            </button>
+        </section>
+
         <nav class="blue-grey darken-4">
             <div style="margin-left: 50px;" class="nav-wrapper">
                 <a id="homeNav" href="./" class="right"><i class="small mdi-action-home"><p>HOME</p></i></a>
@@ -35,21 +44,6 @@
                 <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
             </div>
         </nav>
-
-        <div class="socialMedia">
-            <div id="centeredCaller">
-                <button class="btn">Click Me!</button>
-            </div>
-        </div>
-
-        <script type="text/javascript">
-            jQuery.noConflict();
-            jQuery(document).ready(function(){
-                jQuery(".btn").click(function(){
-                    jQuery("#test2").addClass("sideAnim");
-                });
-            });
-        </script>
 
         <div class="socialMedia">
             <div id="centered">
@@ -109,6 +103,11 @@
             </tr>
         </table>
 
+        <div class="socialMedia">
+            <div id="centeredCaller">
+                <a style="margin-right: 20px;" id="but" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-communication-clear-all"></i></a>
+            </div>
+        </div>
 
     </body>
 </html>
