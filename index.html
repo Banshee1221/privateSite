@@ -36,16 +36,64 @@
             </div>
         </nav>
 
-        <div id="socialMedia">
+        <div class="socialMedia">
+            <div id="centeredCaller">
+                <button class="btn">Click Me!</button>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            jQuery.noConflict();
+            jQuery(document).ready(function(){
+                jQuery(".btn").click(function(){
+                    jQuery("#test2").addClass("sideAnim");
+                });
+            });
+        </script>
+
+        <div class="socialMedia">
             <div id="centered">
-                <ul>
-                    <li><img width="50px" src="resources/images/icons/github.png"></li>
-                    <li><img width="50px" src="resources/images/icons/twitter.png"></li>
-                    <li><img width="50px" src="resources/images/icons/googleplus.png"></li>
-                    <li><img width="50px" src="resources/images/icons/instagram.png"></li>
-                    <li><img width="50px" src="resources/images/icons/linkedin.png"></li>
-                    <li><img width="50px" src="resources/images/icons/skype.png"></li>
-                    <li><img width="50px" src="resources/images/icons/steam.png"></li>
+                <ul id="test2">
+                    <li>
+                        <a href="https://github.com/Banshee1221/" target="_blank">
+                            <img class="responsive-img" width="50px" src="resources/images/icons/github.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/the_Bansh33" target="_blank">
+                            <img class="responsive-img" width="50px" src="resources/images/icons/twitter.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+EugenedeBeste/" target="_blank">
+                            <img class="responsive-img" width="50px" src="resources/images/icons/googleplus.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/banshee1221/" target="_blank">
+                            <img class="responsive-img" width="50px" src="resources/images/icons/instagram.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://za.linkedin.com/pub/eugene-de-beste/91/35/11" target="_blank">
+                            <img class="responsive-img" width="50px" src="resources/images/icons/linkedin.png">
+                        </a>
+                    </li>
+                    <li>
+
+                        <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                        <div id="MyDiv">
+                            <a onclick="Skype.tryAnalyzeSkypeUri('chat', '0');" href="skype:banshee1221?chat">
+                                <img role="button" class="responsive-img" width="50px" src="resources/images/icons/skype.png">
+                            </a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="http://steamcommunity.com/id/kraterblade" target="_blank">
+                            <img class="responsive-img" width="50px" src="resources/images/icons/steam.png">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

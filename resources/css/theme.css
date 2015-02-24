@@ -160,8 +160,8 @@ nav {
 table {
 }
 
-#socialMedia {
-    width: 200px;
+.socialMedia {
+    width: 10%;
     height: calc(100% - 64px);
     height: -moz-calc(100% - 64px);
     height: -webkit-calc(100% - 64px);
@@ -179,8 +179,44 @@ table {
     display:table-cell;
     vertical-align:middle;
     text-align: right;
+    overflow:hidden;
 }
 
-#centered ul {
+#test2 {
+    margin-right: -55px;
+}
+
+.sideAnim {
+    -webkit-animation: socialMove 1s forwards; /* Safari 4+ */
+    -moz-animation:    socialMove 1s forwards; /* Fx 5+ */
+    -o-animation:      socialMove 1s forwards; /* Opera 12+ */
+    animation:         socialMove 1s forwards; /* IE 10+, Fx 29+ */
+}
+
+#centeredCaller {
+    display:table-cell;
+    vertical-align:middle;
+    text-align: right;
+    overflow:hidden;
+}
+
+#centeredCaller ul {
     margin-right: 20px;
+}
+
+@-webkit-keyframes socialMove {
+    0%   { margin-right: -55px; }
+    100% { margin-right: 20px; }
+}
+@-moz-keyframes socialMove {
+    0%   { margin-right: -55px; }
+    100% { margin-right: 20px; }
+}
+@-o-keyframes socialMove {
+    0%   { margin-right: -55px; }
+    100% { margin-right: 20px; }
+}
+@keyframes socialMove {
+    0%   { margin-right: -55px; }
+    100% { margin-right: 20px; }
 }
