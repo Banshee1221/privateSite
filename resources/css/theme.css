@@ -39,7 +39,6 @@ html, body {
     height: -webkit-calc(100% - 64px);
     height: -o-calc(100% - 64px);
     height: calc(100% - 64px);
-
 }
 
 #wrapper td {
@@ -157,7 +156,15 @@ nav {
 
 /* done */
 
-table {
+#butWrap {
+    position: absolute;
+    margin-top: 64px;
+    right: 10px;
+    top: calc(50% - 64px);
+    top: -moz-calc(50% - 64px);
+    top: -webkit-calc(50% - 64px);
+    top: -o-calc(50% - 64px);
+    top: calc(50% - 64px);
 }
 
 .socialMedia {
@@ -171,7 +178,7 @@ table {
     margin-top: 64px;
     display: table;
     top: 0;
-    right: 0;
+    right: -55px;
     bottom: 0;
 }
 
@@ -180,10 +187,6 @@ table {
     vertical-align:middle;
     text-align: right;
     overflow:hidden;
-}
-
-#test2 {
-    margin-right: -55px;
 }
 
 .sideAnimIn {
@@ -200,6 +203,20 @@ table {
     animation:         socialMoveOut 1s forwards; /* IE 10+, Fx 29+ */
 }
 
+.sideAnimDown {
+    -webkit-animation: socialMoveDown 1s forwards; /* Safari 4+ */
+    -moz-animation:    socialMoveDown 1s forwards; /* Fx 5+ */
+    -o-animation:      socialMoveDown 1s forwards; /* Opera 12+ */
+    animation:         socialMoveDown 1s forwards; /* IE 10+, Fx 29+ */
+}
+
+.sideAnimUp {
+    -webkit-animation: socialMoveUp 1s forwards; /* Safari 4+ */
+    -moz-animation:    socialMoveUp 1s forwards; /* Fx 5+ */
+    -o-animation:      socialMoveUp 1s forwards; /* Opera 12+ */
+    animation:         socialMoveUp 1s forwards; /* IE 10+, Fx 29+ */
+}
+
 #centeredCaller {
     display:table-cell;
     vertical-align:middle;
@@ -212,36 +229,78 @@ table {
 }
 
 @-webkit-keyframes socialMoveIn {
-    0%   { margin-right: -55px; }
-    100% { margin-right: 20px; }
+    0%   { right: -55px; }
+    100% { right: 20px; }
 }
 @-moz-keyframes socialMoveIn {
-    0%   { margin-right: -55px; }
-    100% { margin-right: 20px; }
+    0%   { right: -55px; }
+    100% { right: 20px; }
 }
 @-o-keyframes socialMoveIn {
-    0%   { margin-right: -55px; }
-    100% { margin-right: 20px; }
+    0%   { right: -55px; }
+    100% { right: 20px; }
 }
 @keyframes socialMoveIn {
-    0%   { margin-right: -55px; }
-    100% { margin-right: 20px; }
+    0%   { right: -55px; }
+    100% { right: 20px; }
 }
 
 
 @-webkit-keyframes socialMoveOut {
-    0%   { margin-right: 20px; }
-    100% { margin-right: -55px; }
+    0%   { right: 20px; }
+    100% { right: -55px; }
 }
 @-moz-keyframes socialMoveOut {
-    0%   { margin-right: 20px; }
-    100% { margin-right: -55px; }
+    0%   { right: 20px; }
+    100% { right: -55px; }
 }
 @-o-keyframes socialMoveOut {
-    0%   { margin-right: 20px; }
-    100% { margin-right: -55px; }
+    0%   { right: 20px; }
+    100% { right: -55px; }
 }
 @keyframes socialMoveOut {
-    0%   { margin-right: 20px; }
-    100% { margin-right: -55px; }
+    0%   { right: 20px; }
+    100% { right: -55px; }
+}
+
+@-webkit-keyframes socialMoveDown {
+    0%   { right: 0px; }
+    100% { right: 70px; }
+}
+@-moz-keyframes socialMoveDown {
+    0%   { right: 0px; }
+    100% { right: 70px; }
+}
+@-o-keyframes socialMoveDown {
+    0%   { right: 0px; }
+    100% { right: 70px; }
+}
+@keyframes socialMoveDown {
+    0%   { right: 0px; }
+    100% { right: 70px; }
+}
+
+@-webkit-keyframes socialMoveUp {
+    0%   { right: 70px; }
+    100% { right: 0px; }
+}
+@-moz-keyframes socialMoveUp {
+    0%   { right: 70px; }
+    100% { right: 0px; }
+}
+@-o-keyframes socialMoveUp {
+    0%   { right: 70px; }
+    100% { right: 0px; }
+}
+@keyframes socialMoveUp {
+    0%   { right: 70px; }
+    100% { right: 0px; }
+}
+
+@media (max-height: 165px) {
+    #butWrap{
+        position: fixed;
+        right: 10px;
+        top: 15px;
+    }
 }

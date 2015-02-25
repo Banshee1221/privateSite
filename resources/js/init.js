@@ -42,12 +42,16 @@
 
 $(document).ready(function(){
     $('#but').click(function(){
-        if ($('#test2').hasClass('sideAnimIn')){
-            $("#test2").addClass('sideAnimOut');
-            $("#test2").removeClass('sideAnimIn');
+        if ($('.socialMedia').hasClass('sideAnimIn')){
+            $(".socialMedia").addClass('sideAnimOut');
+            $(".socialMedia").removeClass('sideAnimIn');
+            $("#but").addClass('sideAnimUp');
+            $("#but").removeClass('sideAnimDown');
         } else {
-            $("#test2").removeClass('sideAnimOut');
-            $("#test2").addClass('sideAnimIn');
+            $(".socialMedia").removeClass('sideAnimOut');
+            $(".socialMedia").addClass('sideAnimIn');
+            $("#but").addClass('sideAnimDown');
+            $("#but").removeClass('sideAnimUp');
         }
     });
 });
