@@ -167,26 +167,30 @@ nav {
     top: calc(50% - 64px);
 }
 
+
 .socialMedia {
-    width: 10%;
+
     height: calc(100% - 64px);
     height: -moz-calc(100% - 64px);
     height: -webkit-calc(100% - 64px);
     height: -o-calc(100% - 64px);
     height: calc(100% - 64px);
-    position: absolute;
+    position: fixed;
     margin-top: 64px;
-    display: table;
-    top: 0;
+    top: calc(50% - 275px);
+    top: -moz-calc(50% - 275px);
+    top: -webkit-calc(50% - 275px);
+    top: -o-calc(50% - 275px);
+    top: calc(50% - 275px);
     right: -55px;
     bottom: 0;
 }
+
 
 #centered {
     display:table-cell;
     vertical-align:middle;
     text-align: right;
-    overflow:hidden;
 }
 
 .sideAnimIn {
