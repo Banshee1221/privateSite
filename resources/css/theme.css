@@ -177,11 +177,11 @@ nav {
     height: calc(100% - 64px);
     position: fixed;
     margin-top: 64px;
-    top: calc(50% - 275px);
-    top: -moz-calc(50% - 275px);
-    top: -webkit-calc(50% - 275px);
-    top: -o-calc(50% - 275px);
-    top: calc(50% - 275px);
+    top: calc(50% - 243px);
+    top: -moz-calc(50% - 243px);
+    top: -webkit-calc(50% - 243px);
+    top: -o-calc(50% - 243px);
+    top: calc(50% - 243px);
     right: -55px;
     bottom: 0;
 }
@@ -221,6 +221,18 @@ nav {
     animation:         socialMoveUp 1s forwards; /* IE 10+, Fx 29+ */
 }
 
+.tempAnim {
+    -webkit-animation: socialMoveOut 0s forwards; /* Safari 4+ */
+    -moz-animation:    socialMoveOut 0s forwards; /* Fx 5+ */
+    -o-animation:      socialMoveOut 0s forwards; /* Opera 12+ */
+    animation:         socialMoveOut 0s forwards; /* IE 10+, Fx 29+ */
+    -webkit-animation: socialMoveUp 0s forwards; /* Safari 4+ */
+    -moz-animation:    socialMoveUp 0s forwards; /* Fx 5+ */
+    -o-animation:      socialMoveUp 0s forwards; /* Opera 12+ */
+    animation:         socialMoveUp 0s forwards; /* IE 10+, Fx 29+ */
+
+}
+
 #centeredCaller {
     display:table-cell;
     vertical-align:middle;
@@ -230,6 +242,10 @@ nav {
 
 #centeredCaller ul {
     margin-right: 20px;
+}
+
+.hideStuff {
+    display: none;
 }
 
 @-webkit-keyframes socialMoveIn {
@@ -303,8 +319,14 @@ nav {
 
 @media (max-height: 165px) {
     #butWrap{
-        position: fixed;
+        position: absolute;
         right: 10px;
         top: 15px;
+    }
+}
+
+@media (max-height: 459px) {
+    .socialMedia{
+        top: 0px;
     }
 }

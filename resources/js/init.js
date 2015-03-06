@@ -56,6 +56,21 @@ $(document).ready(function(){
     });
 });
 
+$(window).resize(function() {
+    var wi = $(window).width();
+    var hi = $(window).height();
+    if (wi < 400){
+        $("#but").removeClass('sideAnimUp');
+        $(".socialMedia").removeClass('sideAnimOut');
+        $(".socialMedia").addClass('hideStuff');
+        $("#but").addClass('hideStuff');
+    }
+    else {
+        $(".socialMedia").removeClass('hideStuff');
+        $("#but").removeClass('hideStuff');
+    }
+});
+
 /* jQuery(function($) {
     function fixDiv() {
         var $cache = $('#toc');
