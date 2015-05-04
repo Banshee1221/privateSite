@@ -156,16 +156,28 @@ nav {
 
 /* done */
 
-#butWrap {
+/*#butWrap {*/
+    /*position: absolute;*/
+    /*margin-top: 64px;*/
+    /*right: 10px;*/
+    /*top: calc(50% - 64px);*/
+    /*top: -moz-calc(50% - 64px);*/
+    /*top: -webkit-calc(50% - 64px);*/
+    /*top: -o-calc(50% - 64px);*/
+    /*top: calc(50% - 64px);*/
+/*}*/
+
+.material-grid {
     position: absolute;
     margin-top: 64px;
-    right: 10px;
+    right: 0px;
     top: calc(50% - 64px);
     top: -moz-calc(50% - 64px);
     top: -webkit-calc(50% - 64px);
     top: -o-calc(50% - 64px);
     top: calc(50% - 64px);
 }
+
 
 
 .socialMedia {
@@ -329,4 +341,105 @@ nav {
     .socialMedia{
         top: 0px;
     }
+}
+
+.material-grid {
+    height: 260px;
+    width: 2px;
+    font-family: "Roboto", Arial;
+}
+
+.material-grid section {
+    width: 50%;
+    height: 50%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+}
+
+@keyframes materialResponse {
+    0% {
+        width: 0;
+        height: 0;
+        margin: 0;
+        background: rgba(255,255,255,0.1);
+    }
+    100% {
+        width: 250%;
+        height: 250%;
+        margin: -125%;
+        background: rgba(255,255,255,0.4);
+    }
+}
+
+.material-grid section:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.material-grid section:active:before {
+    animation: materialResponse 0.4s ease;
+    z-index: 2;
+}
+
+.material-green { background: #4CAF50; }
+
+.material-icon {
+    width: 70px;
+    height: 70px;
+    margin: 30px;
+    position: relative;
+}
+
+.material-icon span,
+.material-icon {
+    transition: all 500ms ease;
+}
+
+.material-icon span {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hamburger span {
+    height: 10px;
+    -webkit-transform: translateY(29px);
+}
+
+.hamburger .second {
+    -webkit-transform: translateY(0);
+}
+
+.hamburger .third{
+    -webkit-transform: translateY(60px);
+}
+
+.hamburger span, .arrow span {
+    height: 10px;
+    -webkit-transform: translateY(29px);
+}
+
+/* I also need to move it back a bit to keep it centered. */
+.arrow {
+    -webkit-transform: rotate(180deg) translateX(-3px);
+}
+
+.arrow .second,
+.arrow .third {
+    -webkit-transform: rotate(-45deg) translateY(56px);
+    width: 40px;
+}
+
+.arrow .second {
+    -webkit-transform: rotate(45deg) translateY(-15px) translateX(40px);
 }

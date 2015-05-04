@@ -37,6 +37,30 @@
             $('.parallax').parallax();
         });
 
+        window.onload = function(){
+            var switches = {
+                "hamburger": "arrow",
+                "arrow": "hamburger",
+
+                "stop": "pause",
+                "pause": "play",
+                "play": "stop",
+
+                "plus-one": "plus-two",
+                "plus-two": "plus-one"
+            };
+
+            $(".material-grid section, .material-standalone-section").on("click", function (argument) {
+                var $el = $(this).find(".material-icon"),
+                    icon = $el.data("icon"),
+                    newIcon = switches[icon];
+
+                if (newIcon) {
+                    $el.removeClass(icon).addClass(newIcon).data("icon", newIcon);
+                }
+            });
+        };
+
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
