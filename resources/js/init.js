@@ -70,11 +70,15 @@ $(document).ready(function(){
             $(".socialMedia").addClass('sideAnimOut');
             $(".socialMedia").removeClass('sideAnimIn');
             $("#but").addClass('sideAnimUp');
+            $("#but").removeClass('pointModAdd'); /* Hack */
+            $("#butWrap").removeClass('pointModRem'); /* Hack */
             $("#but").removeClass('sideAnimDown');
         } else {
             $(".socialMedia").removeClass('sideAnimOut');
             $(".socialMedia").addClass('sideAnimIn');
             $("#but").addClass('sideAnimDown');
+            $("#but").addClass('pointModAdd'); /* Hack */
+            $("#butWrap").addClass('pointModRem'); /* Hack */
             $("#but").removeClass('sideAnimUp');
         }
     });
