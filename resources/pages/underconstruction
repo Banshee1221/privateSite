@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/privateSite/resources/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="/privateSite/resources/css/theme.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>About Me | Eugene de Beste</title>
+</head>
+
+<body>
+
+    <div style="position: absolute; left: 50%;">
+        <div style="position: relative; left: -50%;">
+            Under Construction!
+        </div>
+    </div>
+
+</body>
+</html>
